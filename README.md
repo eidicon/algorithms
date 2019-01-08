@@ -2,5 +2,6 @@
 
 ## algorithms implemeted:
  - bubble sort
+ - ...
 
 
