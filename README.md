@@ -1,4 +1,6 @@
-# bubblesort-ES6
+# Sorting algorithms
 
+## algorithms implemeted:
+ - bubble sort
 
 
