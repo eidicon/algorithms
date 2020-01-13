@@ -5,6 +5,7 @@
 export default class BubbleSort {
     /**
      * @method sort
+     * @param {number[]} arrayToSort
      * @returns number[]
      */
     public static sort(arrayToSort: number[]): number[] {
@@ -13,8 +14,6 @@ export default class BubbleSort {
             for (let i: number = 1; i < length; i++) {
                 this.swap(arrayToSort, i - 1, i);
             }
-            // tslint:disable-next-line:no-console
-            console.log(`${k} iteration finished`);
             length--;
         }
 
@@ -30,14 +29,10 @@ export default class BubbleSort {
      * @param {number} secondIndex
      */
     private static swap(data: number[], firstIndex: number, secondIndex: number ) {
-        // tslint:disable-next-line:no-console
-        console.log(`${data[firstIndex]} > ${data[secondIndex]}`);
         if (data[firstIndex] > data[secondIndex]) {
             const tmp: number = data[firstIndex];
             data[firstIndex] = data[secondIndex];
             data[secondIndex] = tmp;
-            // tslint:disable-next-line:no-console
-            console.log(data);
         }
     }
 }
